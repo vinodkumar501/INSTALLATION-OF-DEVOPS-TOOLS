@@ -1,0 +1,38 @@
+https://gradle.org/install/
+
+pre-requisite:  java8 or above
+
+WINDOWS:
+--------
+
+https://gradle.org/releases
+
+On windows downlaod binary and extract at specific place and execute
+
+gradle -v               ( execute cmd line the place where we kept gradle files )
+
+C:\Devops_softwares\gradle-7.4.2\bin>gradle -v
+
+Welcome to Gradle 7.4.2!
+
+Here are the highlights of this release:
+ - Aggregated test and JaCoCo reports
+ - Marking additional test source directories as tests in IntelliJ
+ - Support for Adoptium JDKs in Java toolchains
+
+For more details see https://docs.gradle.org/7.4.2/release-notes.html
+
+
+------------------------------------------------------------
+Gradle 7.4.2
+------------------------------------------------------------
+
+Build time:   2022-03-31 15:25:29 UTC
+Revision:     540473b8118064efcc264694cbcaa4b677f61041
+
+Kotlin:       1.5.31
+Groovy:       3.0.9
+Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
+JVM:          1.8.0_321 (Oracle Corporation 25.321-b07)
+OS:           Windows 11 10.0 x86
+
