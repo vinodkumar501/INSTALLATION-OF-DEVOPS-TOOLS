@@ -1,11 +1,19 @@
-Download java 17:
-=================
+Java8 or above
+
+Download java 17 (JDK17):
+========================
 
 https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
 
 Windows x64 Installer
 
-1. download .exe (jdk17) file and execute on specific folder on pc.
+1. download .exe (java8) file and execute on specific folder on pc.
+
+add as --> on windows --> advanced system setting --> env variables -->on system variables 
+click on new and add 
+
+JAVA_HOME
+C:\Devops_softwares\jdk17\bin          --> Save and check
 
 C:\Users\vinod>java --version
 java 17.0.2 2022-01-18 LTS
