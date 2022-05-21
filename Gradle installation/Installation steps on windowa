@@ -3,28 +3,41 @@ https://gradle.org/install/#:~:text=7.4.2%2Fbin-,Microsoft%20Windows%20users,%3A
 
 pre-requisite:  java8 or above
 
-Download java 17 (JDK17):
+Download java 8 (JDK8):
 ========================
 
-https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+Java8 or above needed for gradle
+
+Download java 8 (JDK8):
+========================
+
+https://www.oracle.com/java/technologies/downloads/#java8
 
 Windows x64 Installer
 
 1. download .exe (java8) file and execute on specific folder on pc.
 
-add as --> on windows --> advanced system setting --> env variables -->on system variables 
+add environment variable as --> on windows --> advanced system setting --> env variables -->on system variables 
 click on new and add 
 
+installed on directory C:\Devops_softwares\jdk8
+
 JAVA_HOME
-C:\Devops_softwares\jdk17\bin          --> Save and check
+C:\Devops_softwares\jdk8
 
-C:\Users\vinod>java --version
-java 17.0.2 2022-01-18 LTS
-Java(TM) SE Runtime Environment (build 17.0.2+8-LTS-86)
-Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
+and add path:
+C:\Devops_softwares\jdk8\bin  --> Save and check
 
-Gradle installation on WINDOWS:
-------------------------------
+check anywhere java version it shows on because we have added env variable we can get anywhere.
+
+C:\Users\vinod>java -version
+java version "1.8.0_333"
+Java(TM) SE Runtime Environment (build 1.8.0_333-b02)
+Java HotSpot(TM) 64-Bit Server VM (build 25.333-b02, mixed mode)
+
+
+Gradle installation on WINDOWS: gralde 7.0.1
+--------------------------------------------
 
 https://gradle.org/releases
 
@@ -34,15 +47,19 @@ On windows downlaod binary and extract at specific place and execute
 
 C:\Devops_softwares\gradle-7.0.1\bin
 
-https://www.360logica.com/blog/how-to-configure-gradle-on-windows-machine/
+#https://www.360logica.com/blog/how-to-configure-gradle-on-windows-machine/
 
-Note: update path file where we have configured gradle and add new variable as GRADLE_HOME as well both otherwise it will not work.
+Note: 
+update "path" file where we have configured gradle and add new variable as "GRADLE_HOME" as well both otherwise it will not work.
 
 add as --> on windows --> advanced system setting --> env variables -->on system variables 
 click on new and add 
 
 GRADLE_HOME
 C:\Devops_softwares\gradle-7.0.1\bin
+
+and add path:
+C:\Devops_softwares\gradle-7.0.1\bin  --> Save and check
 
  note: update same in path ( system variable) file
 
@@ -53,36 +70,15 @@ C:\Devops_softwares\gradle-7.0.1\bin
 C:\Users\vinod>gradle -v
 
 ------------------------------------------------------------
-Gradle 7.4.2
+Gradle 7.0.1
 ------------------------------------------------------------
 
 Build time:   2021-05-10 16:08:58 UTC
 Revision:     67e618faef187783dadd03a34fdab9dc71b85b19
 
-#gradle -v               
-
-C:\Devops_softwares\gradle-7.4.2\bin>gradle -v
-
-Welcome to Gradle 7.4.2!
-
-Here are the highlights of this release:
- - Aggregated test and JaCoCo reports
- - Marking additional test source directories as tests in IntelliJ
- - Support for Adoptium JDKs in Java toolchains
-
-For more details see https://docs.gradle.org/7.4.2/release-notes.html
-
-
-------------------------------------------------------------
-Gradle 7.4.2
-------------------------------------------------------------
-
-Build time:   2022-03-31 15:25:29 UTC
-Revision:     540473b8118064efcc264694cbcaa4b677f61041
-
-Kotlin:       1.5.31
-Groovy:       3.0.9
-Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          1.8.0_321 (Oracle Corporation 25.321-b07)
-OS:           Windows 11 10.0 x86
+Kotlin:       1.4.31
+Groovy:       3.0.7
+Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
+JVM:          1.8.0_333 (Oracle Corporation 25.333-b02)
+OS:           Windows 11 10.0 amd64
 
