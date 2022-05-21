@@ -1,0 +1,48 @@
+Create folder anywhere on your pc windows
+
+folder : gradle -->myfirstproject
+
+open cmd where myproject present 
+
+Execute 
+---->gradle init 
+
+Starting a Gradle Daemon, 1 stopped Daemon could not be reused, use --status for details
+
+Select type of project to generate:
+  1: basic
+  2: application
+  3: library
+  4: Gradle plugin
+->Enter selection (default: basic) [1..4] 1
+
+Select build script DSL:
+  1: Groovy
+  2: Kotlin
+->Enter selection (default: Groovy) [1..2] 1
+
+->Project name (default: firstproject):
+
+
+> Task :init
+Get more help with your project: Learn more about Gradle by exploring our samples at https://docs.gradle.org/7.0.1/samples
+
+BUILD SUCCESSFUL in 19s
+2 actionable tasks: 2 executed
+C:\Users\vinod\OneDrive\Desktop\gradle\firstproject>
+
+
+
+Once its successful you will get folder like below under "myfirstproject"
+
+gradle   -->directory
+.gradle  -->directory
+build
+gradlew
+settings
+
+
+
+
+
+
