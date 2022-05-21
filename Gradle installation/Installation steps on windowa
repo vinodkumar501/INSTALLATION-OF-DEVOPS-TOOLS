@@ -33,6 +33,10 @@ On windows downlaod binary and extract at specific place and execute
 
 C:\Devops_softwares\gradle-7.0.1\bin
 
+https://www.360logica.com/blog/how-to-configure-gradle-on-windows-machine/
+
+Note: update path file where we have configured gradle and add new variable as GRADLE_HOME as well both otherwise it will not work.
+
 add as --> on windows --> advanced system setting --> env variables -->on system variables 
 click on new and add 
 
