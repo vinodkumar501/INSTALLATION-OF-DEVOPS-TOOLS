@@ -67,13 +67,20 @@ Note:
 
 gradle and java version both should compatible otherwise it will fail
 
-jdk17 and gradle7 tried  gradle tasks getting 
+jdk17 and gradle-7 tried  gradle tasks getting 
 Could not compile settings file 'C:\Users\noemi\Desktop\Test\settings.gradle'.
 > startup failed:
+
+sol:
+https://stackoverflow.com/questions/58293436/could-not-compile-settings-gradle-react-native
+
+This is an issue with how Gradle is automating the build and the current version of the JDK installed on your machine, 
+follow these steps to fix it, the react native documentation states you need adoptopenjdk8, however you may have other conflicting 
+JDK versions in the same directory.
+
 ========================================================================================
 
 So updated jdk8 and add environment variable of java and tried
-
 
 gradle project created folder .gradle , build.gradle , settings.gradle files present 
 
