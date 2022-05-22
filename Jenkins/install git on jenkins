@@ -56,7 +56,14 @@ execute :  gradle -v
 Gradle 6.9.2
 ------------------------------------------------------------
 
+#which gradle
 
+/opt/gradle/gradle-6.9.2/bin/gradle
+
+
+on jenkins global tool configuration 
+
+gradle path as : /opt/gradle/gradle-6.9.2/bin
 
 
 ============================ gradle code =========================
