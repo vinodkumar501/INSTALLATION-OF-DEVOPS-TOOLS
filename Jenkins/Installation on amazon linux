@@ -1,18 +1,19 @@
 //variable
 
-http://34.239.110.188:8080/job/Jenkins-basic-pipeline/pipeline-syntax/globals
+//http://34.239.110.188:8080/job/Jenkins-basic-pipeline/pipeline-syntax/globals
 
-Installation steps of Jenkins:  on centos or amazon linux 
-https://github.com/vinodkumar501/ValaxyTech-DevOpsDemos
+//Installation steps of Jenkins:  on centos or amazon linux 
+//https://github.com/vinodkumar501/ValaxyTech-DevOpsDemos
 
-https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
+//https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
 
 yum update -y
 wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum upgrade
 sudo yum install jenkins java-1.8.0-openjdk-devel -y
-(Note: if above fails user below 3 steps)
+
+//(Note: if above fails user below 4 steps in)
 
 ==============================================================
 #sudo yum install epel-release -y  
