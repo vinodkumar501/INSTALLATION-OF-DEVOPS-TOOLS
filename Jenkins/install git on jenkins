@@ -29,13 +29,26 @@ usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/
 ========================================== Install gradle on jenkins ===========================================
 //https://linuxhint.com/installing_gradle_ubuntu/
 //https://services.gradle.org/distributions/
+//https://gradle.org/install/
 
-cd /opt/
-wget https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
 
-unzip gradle-6.9.2-bin.zip
+#mkdir /opt/gradle
+#cd /opt/gradle
 
-export PATH=$PATH:/opt/gradle/bin
+#wget https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
+
+#unzip gradle-6.9.2-bin.zip
+
+#export PATH=$PATH:/opt/gradle/gradle-6.9.2/bin
+
+add same in ~/.bashrc
+
+//after closing terminal stil it shows gradle version
+//https://askubuntu.com/questions/1078876/command-gradle-not-found-how-can-i-run-the-gradle-command-from-any-directory
+
+vi ~/.bashrc   
+
+#export PATH=$PATH:/opt/gradle/gradle-6.9.2/bin
 
 execute :  gradle -v 
 
@@ -43,14 +56,74 @@ execute :  gradle -v
 Gradle 6.9.2
 ------------------------------------------------------------
 
-Build time:   2021-12-21 20:18:38 UTC
-Revision:     5d94aa68c0fdbe443838bb977080e3b9f273e889
 
-Kotlin:       1.4.20
-Groovy:       2.5.12
-Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
-JVM:          1.8.0_312 (Red Hat, Inc. 25.312-b07)
-OS:           Linux 5.10.109-104.500.amzn2.x86_64 amd64
+
+
+============================ gradle code =========================
+pwd
+/root/gradle-simple
+
+#git clone https://github.com/jitpack/gradle-simple.git
+#cd  gradle-simple
+#ls
+build.gradle  gradle  gradlew  gradlew.bat  LICENSE  README.md  src
+
+execute 
+
+#gradle build
+
+after executing build we will get "build" folder
+ls
+build  build.gradle  gradle  gradlew  gradlew.bat  LICENSE  README.md  src
+
+tree build
+
+build
+├── classes
+│   └── java
+│       └── main
+│           └── Hello.class
+├── docs
+│   └── javadoc
+│       ├── allclasses-frame.html
+│       ├── allclasses-noframe.html
+│       ├── constant-values.html
+│       ├── deprecated-list.html
+│       ├── Hello.html
+│       ├── help-doc.html
+│       ├── index-all.html
+│       ├── index.html
+│       ├── overview-tree.html
+│       ├── package-frame.html
+│       ├── package-list
+│       ├── package-summary.html
+│       ├── package-tree.html
+│       ├── script.js
+│       └── stylesheet.css
+├── generated
+│   └── sources
+│       ├── annotationProcessor
+│       │   └── java
+│       │       └── main
+│       └── headers
+│           └── java
+│               └── main
+├── libs
+│   ├── gradle-simple-2.0.jar
+│   ├── gradle-simple-2.0-javadoc.jar
+│   └── gradle-simple-2.0-sources.jar
+└── tmp
+    ├── compileJava
+    │   └── source-classes-mapping.txt
+    ├── jar
+    │   └── MANIFEST.MF
+    ├── javadoc
+    │   └── javadoc.options
+    ├── javadocJar
+    │   └── MANIFEST.MF
+    └── sourcesJar
+        └── MANIFEST.MF
+
 
 
 
