@@ -1,0 +1,80 @@
+ ==================================== INSTALL GIT IN JENKINS VM ====================================
+
+#yum install git -y
+
+#which git
+/usr/bin/git
+
+#MANAGE JENKINS ---> Global tool configurations 
+#Add git path 
+
+git 
+/usr/bin/git
+
+
+======================================= ADD JAVA PATH IN JENKINS UI : =====================================
+
+//https://stackoverflow.com/questions/33104982/how-to-get-java-path-in-centos
+
+#readlink -f $(which java)
+
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/jre/bin/java
+
+//PATH NEED TO GIVE IN JENKINS for java and git
+
+java:
+usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/
+
+
+========================================== Install gradle on jenkins ===========================================
+//https://linuxhint.com/installing_gradle_ubuntu/
+//https://services.gradle.org/distributions/
+//https://gradle.org/install/
+
+
+#mkdir /opt/gradle
+#cd /opt/gradle
+
+#wget https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
+
+#unzip gradle-6.9.2-bin.zip
+
+#export PATH=$PATH:/opt/gradle/gradle-6.9.2/bin
+
+add same in ~/.bashrc
+
+//after closing terminal stil it shows gradle version
+//https://askubuntu.com/questions/1078876/command-gradle-not-found-how-can-i-run-the-gradle-command-from-any-directory
+
+vi ~/.bashrc   
+
+#export PATH=$PATH:/opt/gradle/gradle-6.9.2/bin
+
+execute :  gradle -v 
+
+------------------------------------------------------------
+Gradle 6.9.2
+------------------------------------------------------------
+
+#which gradle
+
+/opt/gradle/gradle-6.9.2/bin/gradle
+
+
+on jenkins global tool configuration 
+
+gradle path as : /opt/gradle/gradle-6.9.2/bin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
