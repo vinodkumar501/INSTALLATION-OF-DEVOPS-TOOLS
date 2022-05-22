@@ -1,0 +1,46 @@
+->INSTALL GIT IN JENKINS VM
+-----------------------------
+yum install git -y
+
+which git
+
+#MANAGE JENKINS ---> Global tool configurations 
+#Add git path 
+
+git 
+/usr/bin/git
+
+
+ADD JAVA PATH IN JENKINS UI : 
+-----------------------------------
+//MANAGE JENKINS ---> Global tool configurations 
+//Add git path and java path in jenkins uI --->check paths in console of jenkins vm using 
+
+CHECK JAVA PATH AND GIT PATH:
+-----------------------------
+//https://stackoverflow.com/questions/33104982/how-to-get-java-path-in-centos
+
+#readlink -f $(which java)
+
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/jre/bin/java
+
+PATH NEED TO GIVE IN JENKINS for java and git
+
+java:
+
+usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
