@@ -1,0 +1,66 @@
+On jenkins
+
+pwd
+/root/gradle-simple
+
+#git clone https://github.com/jitpack/gradle-simple.git
+#cd  gradle-simple
+#ls
+build.gradle  gradle  gradlew  gradlew.bat  LICENSE  README.md  src
+
+execute 
+
+#gradle build
+
+after executing build we will get "build" folder
+ls
+build  build.gradle  gradle  gradlew  gradlew.bat  LICENSE  README.md  src
+
+tree build
+
+build
+├── classes
+│   └── java
+│       └── main
+│           └── Hello.class
+├── docs
+│   └── javadoc
+│       ├── allclasses-frame.html
+│       ├── allclasses-noframe.html
+│       ├── constant-values.html
+│       ├── deprecated-list.html
+│       ├── Hello.html
+│       ├── help-doc.html
+│       ├── index-all.html
+│       ├── index.html
+│       ├── overview-tree.html
+│       ├── package-frame.html
+│       ├── package-list
+│       ├── package-summary.html
+│       ├── package-tree.html
+│       ├── script.js
+│       └── stylesheet.css
+├── generated
+│   └── sources
+│       ├── annotationProcessor
+│       │   └── java
+│       │       └── main
+│       └── headers
+│           └── java
+│               └── main
+├── libs
+│   ├── gradle-simple-2.0.jar
+│   ├── gradle-simple-2.0-javadoc.jar
+│   └── gradle-simple-2.0-sources.jar
+└── tmp
+    ├── compileJava
+    │   └── source-classes-mapping.txt
+    ├── jar
+    │   └── MANIFEST.MF
+    ├── javadoc
+    │   └── javadoc.options
+    ├── javadocJar
+    │   └── MANIFEST.MF
+    └── sourcesJar
+        └── MANIFEST.MF
+
