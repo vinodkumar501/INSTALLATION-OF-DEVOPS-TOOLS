@@ -1,7 +1,7 @@
 On jenkins
 
 pwd
-/root/gradle-simple
+/root/
 
 #git clone https://github.com/jitpack/gradle-simple.git
 #cd  gradle-simple
