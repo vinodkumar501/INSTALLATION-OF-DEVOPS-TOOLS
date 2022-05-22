@@ -1,8 +1,9 @@
-->INSTALL GIT IN JENKINS VM
------------------------------
-yum install git -y
+ ==================================== INSTALL GIT IN JENKINS VM ====================================
 
-which git
+#yum install git -y
+
+#which git
+/usr/bin/git
 
 #MANAGE JENKINS ---> Global tool configurations 
 #Add git path 
@@ -11,27 +12,45 @@ git
 /usr/bin/git
 
 
-ADD JAVA PATH IN JENKINS UI : 
------------------------------------
-//MANAGE JENKINS ---> Global tool configurations 
-//Add git path and java path in jenkins uI --->check paths in console of jenkins vm using 
+======================================= ADD JAVA PATH IN JENKINS UI : =====================================
 
-CHECK JAVA PATH AND GIT PATH:
------------------------------
 //https://stackoverflow.com/questions/33104982/how-to-get-java-path-in-centos
 
 #readlink -f $(which java)
 
 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/jre/bin/java
 
-PATH NEED TO GIVE IN JENKINS for java and git
+//PATH NEED TO GIVE IN JENKINS for java and git
 
 java:
-
 usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/
 
 
+========================================== Install gradle on jenkins ===========================================
 
+//https://services.gradle.org/distributions/
+
+cd /opt/
+wget https://services.gradle.org/distributions/gradle-6.9.2-bin.zip
+
+unzip gradle-6.9.2-bin.zip
+
+export PATH=$PATH:/opt/gradle/bin
+
+execute :  gradle -v 
+
+------------------------------------------------------------
+Gradle 6.9.2
+------------------------------------------------------------
+
+Build time:   2021-12-21 20:18:38 UTC
+Revision:     5d94aa68c0fdbe443838bb977080e3b9f273e889
+
+Kotlin:       1.4.20
+Groovy:       2.5.12
+Ant:          Apache Ant(TM) version 1.10.9 compiled on September 27 2020
+JVM:          1.8.0_312 (Red Hat, Inc. 25.312-b07)
+OS:           Linux 5.10.109-104.500.amzn2.x86_64 amd64
 
 
 
